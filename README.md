@@ -1,3 +1,4 @@
+https://github.com/tscnlab/Templates/blob/main/logo/logo_with_text-01.png
 # Workflow description 
 Here we explain the PYTHON script processing and any manual steps in sequential order. 
 
