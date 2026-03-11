@@ -11,7 +11,10 @@ This repository first needs to be cloned to a local directory on your machine
 
 1. The data must be downloaded from the cloned "EyeMoveChar"-Repository. You should download all available datasets that are provided.
 2. The downloaded data must then all be placed in the same location on your machine.
+```text
+/root
    2.1. Eye Movement Data: Here, a division of the whole-measurement data and initial-15s-data was performed. Depending on which code you would like to run, you only require one or the other. However, the scripts require all files to be downloaded from either "Data/Eye Movements/Initial 15s" or "Data/Eye Movements/Whole Measurement" to run smoothly.
+```
    2.2. Light: No separation between whole measurement or initial measurement sequence was performed here. Please download the data from "EyeMoveChar/Data/Light/cleaned_summary/mcs15.csv" and "EyeMoveChar/Data/Light/cleaned_summary/pupil_luminance.csv" for running the script. Here, relevant data from unwieldly raw data is summarized for easier analysis. The raw data is provided as well in "EyeMoveChar/Data/Light/raw" (Note: The code does not run with the .gos-files provided by the light measurement device. To view the .gos-files the required software is provided by Gigahertz-Optik (https://www.gigahertz-optik.com/en-us/product/msc15/) upon purchasing their product).
    2.3. Post-measurement questionnaire: No separation between whole measurement or initial measurement sequence was performed here. Please download the data from" Data/Questionnaire/Post-measurement questionnaire/PMQ.csv"
 
