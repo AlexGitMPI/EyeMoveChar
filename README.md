@@ -1,15 +1,24 @@
-https://github.com/tscnlab/Templates/blob/main/logo/logo_with_text-01.png
-# Workflow description 
-Here we explain the PYTHON script processing and any manual steps in sequential order. 
+<img src="https://github.com/tscnlab/Templates/blob/main/logo/logo_with_text-01.png" width="400"/>
+# Overview
+Repository for the publication: **Regulation of eyemovements and pupil size in natural scenes**, publicly accessible under (https://doi.org/10.1016/j.visres.2026.108801)
+Here we explain the PYTHON script processing and any manual steps in sequential order to reproduce the analysis of the data
 
-## Base Code
-This Python script is used to extract all the necessary data from the respective files in the "data" folder. In order to run the script successfully, all the files need to be downloaded 
-and the script updated (source names) to direct it to the correct files. Run the individual subscripts one after another.
-### Light data
-The files that could be exported are in a .gos-format, which is not common and tricky to open with anything but the software used for the spectroradio meter MCS15 by Gigahertz Optik. 
-The code das not run with the .gos-files and is instead fed with a summary file (mcs15.csv) that summarizes all light measurement data for every participant. Another file (pupil_luminance.csv) is used to plot the relationship between pupil size (mm) and luminance (lux).
-### Eye Movement data
-The eye movement data analysis runs on the raw data .csf-files extracted by the Tobii Pro Glasses 3. The 5-second-interval analysis is performed with raw data that was extracted from five 
-second long times of interst (TOI). The code of these TOI-analysis is similarly structures as the "whole measurement"-analysis.
-### Post-measurment questionnairs
-The post-measurment questionnaire data is summarized in a single table 
+## Cloning the repository
+
+This repository first needs to be cloned to a local directory on your machine
+
+## Data
+
+1. The data must be downloaded from the cloned "EyeMoveChar"-Repository. You should download all available datasets that are provided.
+2. The downloaded data must then all be placed in the same location on your machine.
+   2.1. Eye Movement Data: Here, a division of the whole-measurement data and initial-15s-data was performed. Depending on which code you would like to run, you only require one or the other. However, the scripts require all files to be downloaded from either "Data/Eye Movements/Initial 15s" or "Data/Eye Movements/Whole Measurement" to run smoothly.
+   2.2. Light: No separation between whole measurement or initial measurement sequence was performed here. Please download the data from "EyeMoveChar/Data/Light/cleaned_summary/mcs15.csv" and "EyeMoveChar/Data/Light/cleaned_summary/pupil_luminance.csv" for running the script. Here, relevant data from unwieldly raw data is summarized for easier analysis. The raw data is provided as well in "EyeMoveChar/Data/Light/raw" (Note: The code does not run with the .gos-files provided by the light measurement device. To view the .gos-files the required software is provided by Gigahertz-Optik (https://www.gigahertz-optik.com/en-us/product/msc15/) upon purchasing their product).
+   2.3. Post-measurement questionnaire: No separation between whole measurement or initial measurement sequence was performed here. Please download the data from" Data/Questionnaire/Post-measurement questionnaire/PMQ.csv"
+
+## Code
+
+1. Depending on your preference for analysis, download the codes "EyeMoveChar-BaseCode_VR.ipynb" to analyze the full duration of eye movement measurements and/or "EyeMoveChar_TOI_Bins.ipynb" for analysis of the initial three 5 seconds time binse of each measurement.
+2. The manuscripts are quite large an require manual renaming of the path where the downloaded data is stored on you machine
+3. Run the individual subscripts of each code one after another
+
+
