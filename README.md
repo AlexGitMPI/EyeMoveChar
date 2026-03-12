@@ -18,6 +18,8 @@ This repository first needs to be cloned to a local directory on your machine
    
    2.3. Post-measurement questionnaire: No separation between whole measurement or initial measurement sequence was performed here. Please download the data from" Data/Questionnaire/Post-measurement questionnaire/PMQ.csv"
 
+3. Videos, images and metadata of each measurement are available on FigShare (Indoor scene 1: https://doi.org/10.6084/m9.figshare.30518291; Indoor scene 2: https://doi.org/10.6084/m9.figshare.30520733; Indoor scene 3: https://doi.org/10.6084/m9.figshare.30520892; Outdoor scene 1: https://doi.org/10.6084/m9.figshare.30520829; Outdoor scene 2: https://doi.org/10.6084/m9.figshare.30520925; Outdoor scene 3: https://doi.org/10.6084/m9.figshare.30520979).). This data is not required for running the provided scripts.
+
 ## Code
 
 1. Depending on your preference for analysis, download the codes "EyeMoveChar-BaseCode_VR.ipynb" to analyze the full duration of eye movement measurements and/or "EyeMoveChar_TOI_Bins.ipynb" for analysis of the initial three 5 seconds time binse of each measurement.
